@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ===== BOXICONS ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Devlogs Store</title>
+  </head>
+  <body>
+    <!--===== HEADER NAV =====-->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="header-brand">devlogs store</a>
+          <div class="nav-icons disabled-user-select">
+            <span class="nav-icon search">
+              <i class="bx bx-search"></i>
+            </span>
+            <span class="nav-icon cart">
+              <i class="bx bx-cart"></i>
+              <span class="cart-count">0</span>
+            </span>
+            <span class="nav-icon hamburger-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <!-- NAV SEARCH INPUT -->
+          <div class="search-input">
+            <div class="container">
+              <form>
+                <input type="text" placeholder="What in your mind ?" />
+                <i class="search-btn btn btn-primary bx bx-search"></i>
+              </form>
+            </div>
+          </div>
+          <!-- NAV CART PRODUCTS ITEM -->
+          <div class="cart-products-items">
+            <div class="cart-products-total">Cart Total : $0</div>
+            <div class="cart-product-back">
+              <span class="close-cart">back</span>
+            </div>
+            <div class="cart-product-dom"></div>
+          </div>
+          <!-- NAV SIDEBAR -->
+          <div class="nav-sideabr">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">
+                  <i class="bx bxs-home"></i>
+                  home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#featured-products" class="nav-link">
+                  <i class="bx bxs-star"></i>
+                  featured
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#new-arrivals" class="nav-link">
+                  <i class="bx bxs-cool"></i>
+                  new
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#newsletter" class="nav-link">
+                  <i class="bx bx-mail-send"></i>
+                  subscribed
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--===== HOME =====-->
+    <div class="home" id="home">
+      <div class="container">
+        <div class="home-content">
+          <div class="home-info">
+            <h1 class="home-title">
+              new
+              <span>arrivals</span>
+            </h1>
+            <a href="#featured-products" class="btn btn-primary">go shopping</a>
+          </div>
+          <div class="home-img">
+            <img src="./assets/img/home.png" alt="home image" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--===== COLLECTION =====-->
+    <div class="collection">
+      <div class="container">
+        <div class="collection-content">
+          <div class="collection-item collection-backpack-men">
+            <div class="collection-img">
+              <img src="assets/img/backpackMan.png" alt="backpackMan" />
+            </div>
+            <div class="collection-info">
+              <h2 class="collection-title">
+                <span>men</span>
+                <span>backpack</span>
+              </h2>
+              <!-- <a href="#" class="view-collection">view collection</a> -->
+            </div>
+          </div>
+          <div class="collection-item collection-backpack-women">
+            <div class="collection-info">
+              <h2 class="collection-title">
+                <span>women</span>
+                <span>backpack</span>
+              </h2>
+              <!-- <a href="#" class="view-collection">view collection</a> -->
+            </div>
+            <div class="collection-img">
+              <img src="assets/img/backpackWoman.png" alt="backpackWoman" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--===== FEATURED PRODUCTS =====-->
+    <section class="featured-products section" id="featured-products">
+      <div class="section-head">
+        <h2>featured products</h2>
+        <!-- <a href="#">view all</a> -->
+      </div>
+      <div class="container">
+        <div class="featured-products-content"></div>
+      </div>
+    </section>
+    <!--===== OFFER =====-->
+    <section class="offer section" id="offer">
+      <div class="offer-overlay">
+        <div class="offer-content">
+          <div class="offer-info">
+            <h2>Special offers</h2>
+            <p>Special offers and discounts throughout the week</p>
+            <a href="#new-arrivals" class="btn-primary">shop now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--===== NEW ARRIVALS =====-->
+    <section class="new-arrivals section" id="new-arrivals">
+      <div class="section-head">
+        <h2>new arrivals</h2>
+        <!-- <a href="#">view all</a> -->
+      </div>
+      <div class="container">
+        <div class="new-arrivals-content"></div>
+      </div>
+    </section>
+    <!--===== NEWSLETTER =====-->
+    <section class="newsletter section" id="newsletter">
+      <div class="container">
+        <div class="newsletter-info">
+          <h2>our newsletter</h2>
+          <p>Subscribe now to receive the latest offers and discounts</p>
+          <form>
+            <input type="text" placeholder="Enter your email" />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--===== SPONSORS =====-->
+    <section class="sponsors section">
+      <div class="container">
+        <div class="sponsors-content">
+          <div class="sponsor-item">
+            <img src="assets/img/logo1.png" alt="sponser" />
+          </div>
+          <div class="sponsor-item">
+            <img src="assets/img/logo2.png" alt="sponser" />
+          </div>
+          <div class="sponsor-item">
+            <img src="assets/img/logo3.png" alt="sponser" />
+          </div>
+          <div class="sponsor-item">
+            <img src="assets/img/logo4.png" alt="sponser" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--===== FOOTER =====-->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col devlogs-store">
+            <h2 class="footer-col-head">DEVLOGS STORE</h2>
+            <a href="#" class="devlogs-store-img">
+              <img src="assets/img/footerstore1.png" alt="footerstore" />
+            </a>
+            <a href="#" class="devlogs-store-img">
+              <img src="assets/img/footerstore2.png" alt="footerstore" />
+            </a>
+          </div>
+          <div class="footer-col explore">
+            <h2 class="footer-col-head">explore</h2>
+            <ul class="explore-list list">
+              <li class="explore-item">
+                <a href="#home" class="explore-link"> home </a>
+              </li>
+              <li class="explore-item">
+                <a href="#featured" class="explore-link"> featured </a>
+              </li>
+              <li class="explore-item">
+                <a href="#new" class="explore-link"> new </a>
+              </li>
+              <li class="explore-item">
+                <a href="#subscribed" class="explore-link"> subscribed </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col our-services">
+            <h2 class="footer-col-head">our services</h2>
+            <ul class="our-services-list list">
+              <li class="our-services-item">
+                <a href="#" class="our-services-link">pricing</a>
+              </li>
+              <li class="our-services-item">
+                <a href="#" class="our-services-link">free shipping</a>
+              </li>
+              <li class="our-services-item">
+                <a href="#" class="our-services-link">gift cards</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col follow">
+            <h2 class="footer-col-head">follow</h2>
+            <ul class="follow-list">
+              <li class="follow-item">
+                <a href="#" class="follow-link">
+                  <i class="bx bxl-facebook-square"></i>
+                </a>
+              </li>
+              <li class="follow-item">
+                <a href="#" class="follow-link">
+                  <i class="bx bxl-instagram-alt"></i>
+                </a>
+              </li>
+              <li class="follow-item">
+                <a href="#" class="follow-link">
+                  <i class="bx bxl-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="copyright-text">&copy; 2021 copyright all right reserved</p>
+    </footer>
+
+    <!-- ===== SINGLE PRODUCT ===== -->
+    <div class="single-product-dom"></div>
+
+    <!--===== CONTENTFUL JS =====-->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <!--===== MAIN JS =====-->
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>
